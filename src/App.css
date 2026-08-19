@@ -642,3 +642,109 @@ img {
     height: 155px;
   }
 }
+/* =========================
+   MOBILE SCREEN FIX
+========================= */
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+
+  margin: 0 auto;
+  padding: 15px;
+
+  overflow-x: hidden;
+}
+
+/* Contact full screen */
+.contact {
+  width: 100%;
+  max-width: 100%;
+  padding: 25px 10px;
+}
+
+.contact-box {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ID {
+  width: 280px;
+  max-width: 100%;
+
+  padding: 22px 15px;
+
+  overflow: hidden;
+}
+
+.ID div {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .main {
+    width: 100%;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 8px;
+
+    border-radius: 0;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 20px 5px;
+  }
+
+  .contact-box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 0;
+  }
+
+  .ID {
+    width: 100%;
+    max-width: 320px;
+
+    margin: 0;
+  }
+}
