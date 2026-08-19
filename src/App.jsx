@@ -7,7 +7,7 @@ import './App.css'
 import { Route,Routes,Link } from 'react-router-dom'
 const App = () => {
   return (
-    <div style={{backgroundColor:'#b9d9ff',height:'600px',width:'800px',padding:'10px'}}>
+    <div >
         <div className='EE'>
         <Link to='/'>Home</Link>
         <Link to='/AboutMe'>AboutMe</Link>

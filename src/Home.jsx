@@ -1,5 +1,6 @@
 import React from 'react'
 import'./App.css'
+import logo from './ishu..JPG'
 const Home = () => {
   return (
     <div style={{padding:'20px'}}>
@@ -9,7 +10,7 @@ const Home = () => {
       <h2>frontend Developer</h2>
       </div>
 
-      <img className='BB' style={{height:'200px',width:'200px' ,padding:'20px'}} src="https://img.freepik.com/premium-photo/cartoon-computer-programmer-white-background_1173099-15437.jpg?w=2000" alt="" />
+      <img className='BB' style={{height:'200px',width:'200px' ,padding:'20px'}} src={logo} alt="" />
     </div>
   )
 }
