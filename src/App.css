@@ -433,35 +433,32 @@ img {
 }
 
 .contact h1 {
-  color: #202c68;
-  font-size: clamp(28px, 5vw, 40px);
+  color: #263b80;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 
 .contact-box {
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 
   display: flex;
   justify-content: center;
   align-items: stretch;
-
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .ID {
-  width: min(100%, 300px);
-  min-width: 0;
+  width: 280px;
+  max-width: 100%;
+  padding: 25px 15px;
 
-  padding: 22px 15px;
+  background: white;
+  border-radius: 20px;
 
-  background: rgba(255, 255, 255, 0.8);
-
-  border-radius: 18px;
-
-  box-shadow: 0 8px 20px rgba(60, 70, 130, 0.12);
+  box-shadow: 0 8px 20px rgba(60, 70, 130, 0.15);
 
   overflow: hidden;
 }
@@ -476,17 +473,25 @@ img {
   max-width: 100%;
   overflow-wrap: anywhere;
   word-break: break-word;
-  font-size: 14px;
 }
+
+
+/* MOBILE */
 
 @media (max-width: 600px) {
 
   .contact {
-    padding: 25px 8px;
+    width: 100%;
+    padding: 20px 5px;
+  }
+
+  .contact h1 {
+    font-size: 30px;
   }
 
   .contact-box {
     width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
@@ -496,82 +501,7 @@ img {
     width: 100%;
     max-width: 320px;
   }
-}
 
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-  body {
-    background: #eef4ff;
-  }
-
-  .main {
-    width: 96%;
-
-    margin: 8px auto;
-
-    padding: 8px;
-
-    border-radius: 18px;
-  }
-
-
-  /* NAVBAR */
-
-  .EE {
-    gap: 4px;
-
-    padding: 8px;
-
-    margin-bottom: 10px;
-  }
-
-  .EE a {
-    font-size: 12px;
-
-    padding: 8px 9px;
-  }
-
-
-  /* HOME */
-
-  .home {
-    flex-direction: column;
-
-    text-align: center;
-
-    min-height: auto;
-
-    padding: 40px 10px;
-
-    gap: 30px;
-  }
-
-  .CC {
-    width: 100%;
-  }
-
-  .BB {
-    width: 180px;
-
-    height: 180px;
-  }
-
-
-  /* ABOUT */
-
-  .about {
-    padding: 12px;
-  }
-
-  .Box,
-  .Bo {
-    padding: 15px;
-  }
 
 
   /* SKILLS */
