@@ -428,92 +428,73 @@ img {
 
 .contact {
   width: 100%;
-
-  padding: clamp(15px, 4vw, 35px);
-
+  padding: 30px 15px;
   text-align: center;
 }
 
 .contact h1 {
   color: #202c68;
-
-  font-size: clamp(28px, 4vw, 40px);
-
+  font-size: clamp(28px, 5vw, 40px);
   margin-bottom: 30px;
 }
 
 .contact-box {
   width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 
   display: flex;
-
   justify-content: center;
-
   align-items: stretch;
 
+  gap: 20px;
   flex-wrap: wrap;
-
-  gap: clamp(15px, 3vw, 30px);
 }
 
 .ID {
   width: min(100%, 300px);
+  min-width: 0;
 
-  padding: 25px 20px;
+  padding: 22px 15px;
 
   background: rgba(255, 255, 255, 0.8);
 
-  border-radius: 20px;
+  border-radius: 18px;
 
-  box-shadow:
-    0 8px 20px rgba(60, 70, 130, 0.12);
+  box-shadow: 0 8px 20px rgba(60, 70, 130, 0.12);
 
-  transition: 0.3s;
-}
-
-.ID:hover {
-  transform: translateY(-7px);
-
-  box-shadow:
-    0 15px 30px rgba(60, 70, 130, 0.2);
+  overflow: hidden;
 }
 
 .ID b {
   display: block;
-
   color: #6754e8;
-
-  font-size: 18px;
-
   margin-bottom: 10px;
 }
 
 .ID div {
-  color: #46557d;
-
-  font-size: 14px;
-
+  max-width: 100%;
   overflow-wrap: anywhere;
+  word-break: break-word;
+  font-size: 14px;
 }
 
+@media (max-width: 600px) {
 
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 900px) {
-
-  .main {
-    width: 95%;
+  .contact {
+    padding: 25px 8px;
   }
 
-  .home {
-    gap: 35px;
+  .contact-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
-  .skills-container {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+  .ID {
+    width: 100%;
+    max-width: 320px;
   }
 }
 
